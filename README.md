@@ -1,6 +1,6 @@
 # gpu_cron
 
-A repo to version control the cron jobs requiring a GPU that on my desktop
+A repo to version control the cron jobs requiring GPU that run on my desktop
 
 It will periodically pull down the repos specified in `active_reops.txt` and poll for certain tags.
 
