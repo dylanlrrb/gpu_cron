@@ -10,9 +10,11 @@ The trained model and html converted notebook from the execution are then uplade
 
 ## Requirements
 
-Clone the repo into the root directory or change the working directory in `run.sh`
+ - You will need virtualenv installed
 
-Make sure you have AWS credentials set up to read from and write to the S3 bucket you want to store the build products in
+ - Clone the repo into the root directory or change the working directory in `run.sh`
+
+ - Make sure you have AWS credentials set up to read from and write to the S3 bucket you want to store the build products in
 
 ## Cron setup
 
