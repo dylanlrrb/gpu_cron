@@ -24,7 +24,7 @@ if not os.path.isfile('running.txt'):
         call(['git', 'clone', active_repo_dict[repo], f'active_repos/{repo}'])
       os.chdir(f'active_repos/{repo}')
       call(['git', 'pull'])
-      call(['python', 'scripts/run_pipeline.py'])
+      call(['python3', 'scripts/run_pipeline.py'])
       os.chdir('../..')
 
     repos_to_remove = local_repos - active_repos
@@ -32,7 +32,7 @@ if not os.path.isfile('running.txt'):
       os.chdir(f'active_repos/{repo}')
       call(['git', 'pull'])
       try:
-        call(['python', 'scripts/teardown.py'])
+        call(['python3', 'scripts/teardown.py'])
       finally:
         print('teardown complete')
       os.chdir('../..')
