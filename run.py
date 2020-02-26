@@ -40,3 +40,5 @@ if not os.path.isfile('running.txt'):
 
   finally:
     os.remove('running.txt')
+else:
+  print('a previously run cron job is still running...')
